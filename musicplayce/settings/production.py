@@ -4,9 +4,12 @@ import dj_database_url
 DEBUG = False
 
 ALLOWED_HOSTS = ['.centraldobrasil.club']
-
+MONGO_DATABASE_HOST = os.environ.get('MONGO_URL')
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('MONGO_URL')),
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'musicplayce',
+    },
 }
 
 REST_FRAMEWORK = {
