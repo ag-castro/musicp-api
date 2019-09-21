@@ -4,11 +4,14 @@ import dj_database_url
 DEBUG = False
 
 ALLOWED_HOSTS = ['.centraldobrasil.club']
-MONGO_DATABASE_HOST = os.environ.get('MONGO_URL')
+
+# mongodb://mp-db:d115e68fc9a342d500b20919fe58955f@dokku-mongo-mp-db:27017/mp_db
+
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'musicplayce',
+        # 'NAME': 'mp-db',
+        'HOST': 'mongodb://mp-db:d115e68fc9a342d500b20919fe58955f@dokku-mongo-mp-db:27017/mp_db',
     },
 }
 
