@@ -11,6 +11,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'mp-db',
+        'HOST': 'mongodb://mp-db:d115e68fc9a342d500b20919fe58955f@dokku-mongo-mp-db:27017/mp_db',
+        'USER': 'mp-db',
+        'PASSWORD': 'd115e68fc9a342d500b20919fe58955f',
 
     },
 }
