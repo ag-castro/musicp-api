@@ -22,6 +22,7 @@ REST_FRAMEWORK = {
 }
 
 MEDIA_ROOT = '/storage'
+MEDIA_URL = '/media/'
 
 CORS_ORIGIN_ALLOW_ALL = False
 
