@@ -11,10 +11,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'mp-db',
-        'HOST': 'dokku-mongo-mp-db',
-        'PORT': 27017,
-        'USER': 'mp-db',
-        'PASSWORD': 'd115e68fc9a342d500b20919fe58955f',
 
     },
 }
