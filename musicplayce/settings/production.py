@@ -6,10 +6,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['.centraldobrasil.club']
 
 DATABASES = {
-
-    'default': {
-        'default': dj_database_url.parse(os.environ.get('MONGO_URL')),
-    }
+    'default': dj_database_url.parse(os.environ.get('MONGO_URL')),
 }
 
 REST_FRAMEWORK = {
