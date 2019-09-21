@@ -20,6 +20,8 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-    'http://127.0.0.1:8000',
-    'http://localhost:4200',
+    'https://mp.centraldobrasil.club',
+    'https://musicplayce-ui.centraldobrasil.club',
+    'https://centraldobrasil.club',
+    'https://wwww.centraldobrasil.club',
 )
